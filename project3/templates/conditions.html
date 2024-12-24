@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: fuchsia;
+            background-color: bisque;
+            height: 400px;
+            width: 500px;
+        }
+        div:hover{
+            color: bisque;
+            background-color: fuchsia;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+            <h1>CONDITIONS</h1>
+            {% if age > 17  %}
+            <h1>{{name}} is above 18</h1>
+            {% else %}
+            <h1>{{name}} is under 18</h1>
+            {% endif %}
+        </div>
+    </center>
+</body>
+</html>
